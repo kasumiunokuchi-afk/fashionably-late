@@ -1,0 +1,31 @@
+body{
+    font-family: "Times", "メイリオ", sans-serif;
+    color: #8F7E6E;
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230;
+    text-align: center;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: #8F7E6E;
+}
+
+.title {
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+}

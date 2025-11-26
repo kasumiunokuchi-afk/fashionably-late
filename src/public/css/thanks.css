@@ -1,0 +1,46 @@
+
+.thanks__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.thanks__heading {
+    /* margin-bottom: 40px; */
+    text-align: center;;
+}
+
+.thanks__content::before {
+    content: "Thank you";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+    color: rgba(0, 0, 0, 0.1);
+    /* 薄く表示 */
+    white-space: nowrap;
+    pointer-events: none;
+    /* 背景文字にクリックを邪魔されない */
+    z-index: -1;
+}
+
+.content__button {
+    margin-top: 30px;
+}
+
+.content__button-home {
+    padding: 10px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background: #82756B;
+    color: #fff;
+    cursor: pointer;
+}

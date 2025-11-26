@@ -1,0 +1,132 @@
+.admin__content{
+    width: 70%;
+    margin: 10px auto;
+}
+
+.form{
+    margin: 30px auto;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.search-form__item {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #F4F4F4;
+    color: #8F7E6E;
+}
+
+.search-form__button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.search-form__button-submit,
+.contact-table__button-detail {
+    padding: 5px 10px;
+    /* width: 100px; */
+    /* height: 35px; */
+    border: none;
+    border-radius: 3px;
+    background: #82756B;
+    color: #fff;
+    cursor: pointer;
+}
+.select-wrapper {
+    position: relative;
+    width: 55%;
+}
+
+.select-wrapper select {
+    /* width: 80%; */
+    padding: 8px 30px 8px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F4F4F4;
+    color: #8F7E6E;
+    appearance: none;
+    /* ブラウザ標準の矢印を消す */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* 疑似要素で三角を作る */
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #aaa;
+    transform: translateY(-50%);
+}
+
+.contact-table__inner th{
+    background-color: #8F7E6E;
+    color: #fff;
+    padding: 5px 40px;
+    font-weight:normal;
+}
+.contact-table__inner td {
+    padding: 5px 40px;
+    background-color: #eee;
+    text-align: left;
+}
+
+.modal-dialog{
+    width: 50%;
+}
+
+.modal-content{
+    border-radius: 0px;
+}
+
+.modal-header{
+    border:none;
+}
+
+.modal-footer{
+    border:none;
+}
+
+.modal-body{
+    margin: 10px auto;
+    width: 90%;
+}
+
+.modal-table__inner{
+    border:none;
+    text-align: left;
+}
+
+.modal-table__header{
+    width: 40%;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.modal__button-delete{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.modal__button-delete button{
+    padding: 5px 20px;
+    /* height: 35px; */
+    border: none;
+    border-radius: 1px;
+    background: #BA370D;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
