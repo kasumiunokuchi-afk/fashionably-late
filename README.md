@@ -32,9 +32,14 @@
 3. 環境変数の設定
  ```bash
  cp .env.example .env
+ exit
+ code . 
  ```
-.env作成後、以下の変更を行う。
+
+.env作成後、vscodeを使用して以下の変更を行う。
 ```
+修正ファイル： .env
+
 <変更前>
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -53,10 +58,6 @@ DB_PASSWORD=laravel_pass
 
 ```
 
-4. php コンテナから一度ログアウトする
- ```bash
- exit
- ```
 
 5. php コンテナに再ログイン
  ```bash
