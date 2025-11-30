@@ -31,6 +31,11 @@ class AdminController extends Controller
          'pageType'     => 'admin']);
     }
 
+    public function reset(Request $request)
+    {
+        return redirect('/admin');
+    }
+
     public function export(Request $request){
         $contacts = Contact::with('category')
                     ->GenderSearch($request->gender)

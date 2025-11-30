@@ -5,6 +5,7 @@
 ### Docker ビルド
 
 1. git リポジトリをクローンする
+　URL：
 
 1. Docker をビルドする
 
@@ -41,3 +42,4 @@
 - nginx : 1.21.1
 
 ## ER 図
+![ER図](docments/index.drawio.png)

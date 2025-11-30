@@ -21,7 +21,7 @@ Route::post('/contacts', [ContactController::class, 'store']);
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::get('/confirm', [ContactController::class, 'confirmShow']);
 Route::get('/thanks', function(){
-    return view('thanks');
+    return redirect('thanks');
 });
 
 // 管理画面
@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'admin']);
 });
 Route::get('/search', [AdminController::class, 'search']);
-Route::get('/reset', [AdminController::class, 'admin']);
+Route::get('/reset', [AdminController::class, 'reset']);
 Route::get('/export', [AdminController::class, 'export']);
 Route::delete('/delete', [AdminController::class, 'destroy']);
 
