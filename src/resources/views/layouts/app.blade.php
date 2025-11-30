@@ -19,6 +19,29 @@
                 FashionablyLate
             </a>
         </div>
+        @php
+            $type = $pageType ?? 'default';
+        @endphp
+        <div class="header__login">
+            @if($type === 'register')
+            <form action="/login" method="get">
+                @csrf
+                <button type="submit">login</button>
+            </form>
+            @elseif($type === 'login')
+            <form action="/register" method="get">
+                @csrf
+                <button type="submit">register</button>
+            </form>
+            @elseif($type === 'admin')
+            @if (Auth::check())
+            <form action="/logout" method="post">
+                @csrf
+                <button type="submit">logout</button>
+            </form>
+            @endif
+            @endif
+        </div>
     </header>
     <main>
         <h2 class="title">

@@ -24,12 +24,6 @@ span.form__label--required::after {
     margin-left: 2px;
 }
 
-.form__error{
-    height: 20px;
-    color: #f00;
-    text-align: left;
-}
-
 .form__group-content{
     width: 65%;
 }

@@ -1,4 +1,4 @@
-main{
+body{
     background-color: #F1ECE7;
     padding-bottom: 30px;
 }
@@ -8,7 +8,7 @@ main{
     text-align: center;
     background-color: #fff;
     border-radius: 3px;
-    border: 1px solid #82756B;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     width: 50%;
 }
 
@@ -41,9 +41,8 @@ main{
 }
 
 .register-form__button-submit {
-    padding: 10px;
+    padding: 5px;
     width: 100px;
-    height: 35px;
     border: none;
     border-radius: 3px;
     background: #82756B;

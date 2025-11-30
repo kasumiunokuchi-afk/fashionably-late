@@ -14,8 +14,7 @@ class Category extends Model
         'content'
     ];
 
-    public function tools(){
+    public function contacts(){
         return $this->hasMany('App\Models\Contact');
     }
-
 }

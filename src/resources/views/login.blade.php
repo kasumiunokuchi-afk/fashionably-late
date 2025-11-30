@@ -10,11 +10,21 @@
     @csrf
     <div class="login-form__item">
         <label>メールアドレス</label>
-        <input type="mail" name="mail" value="" placeholder="aaa">
+        <input type="email" name="email" value="{{ old('email') }}" placeholder="例：test@example.com" />
+        @error('email')
+        <div class="form__error">
+            {{$message}}
+        </div>
+        @enderror
     </div>
     <div class="login-form__item">
         <label>パスワード</label>
-        <input type="password" name="password" value="" placeholder="aaa">
+        <input type="password" name="password" placeholder="例：coachtechno1" />
+        @error('password')
+        <div class="form__error">
+            {{$message}}
+        </div>
+        @enderror
     </div>
     <div class="login-form__button">
         <button class="login-form__button-submit" type="submit">ログイン</button>

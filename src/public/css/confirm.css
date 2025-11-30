@@ -33,12 +33,6 @@
     border-bottom: 1px solid #ddd;
 }
 
-.confirm-table__text input{
-    width: 100%;
-    outline: none;
-    border: none;
-}
-
 .confirm-table__row:last-child .confirm-table__header,
 .confirm-table__row:last-child .confirm-table__text{
     border-bottom-width: 0;
@@ -59,8 +53,11 @@
     cursor: pointer;
     margin-right: 30px;
 }
-.from__link-back{
-    margin-top: 30px;
+
+.form__link-back{
     text-align: center;
     color: #8F7E6E;
+    border: none;
+    text-decoration: underline;
+    background: none;
 }

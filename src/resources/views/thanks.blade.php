@@ -15,7 +15,8 @@
                 <h2>お問い合わせありがとうございました</h2>
             </div>
             <div class="content__button">
-                <button class="content__button-home" >HOME</button>
+                <button type="button" class="content__button-home" onclick="window.location='{{ '/' }}'">HOME
+                </button>
             </div>
         </div>
     </main>
