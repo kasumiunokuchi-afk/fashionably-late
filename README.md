@@ -5,25 +5,79 @@
 ### Docker ビルド
 
 1. git リポジトリをクローンする
-　URL：
+ ```bash
+ mkdir test-unokuchi
+ cd test-unokuchi
+ git clone git@github.com:kasumiunokuchi-afk/fashionably-late.git
+ cd fashionably-late
+ ```
 
-1. Docker をビルドする
+2. Docker をビルドする
+ ```bash
+ docker-compose up -d --build
+ ```
 
 ### Laravel 環境構築
 
 1. php コンテナにログイン
+ ```bash
+ docker-compose exec php bash
+ ```
 
-1. パッケージをインストール
+2. パッケージをインストール
+ ```bash
+ composer install
+ ```
 
-1. 環境変数の設定
+3. 環境変数の設定
+ ```bash
+ cp .env.example .env
+ ```
+.env作成後、以下の変更を行う。
+```
+<変更前>
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
 
-1. php 処理を終了
-   // 日本語
+<変更後>
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=laravel_user
+DB_PASSWORD=laravel_pass
 
-1. php コンテナに再ログイン
+```
 
-1. key の作成
-   // 日本語
+4. php コンテナから一度ログアウトする
+ ```bash
+ exit
+ ```
+
+5. php コンテナに再ログイン
+ ```bash
+ docker-compose exec php bash
+ ```
+
+6. アプリケーション用KEYの作成
+ ```bash
+ php artisan key:generate
+ ```
+
+7. DBのマイグレーション
+ ```bash
+ php artisan migrate
+ ```
+
+ 8. シーディングの実行
+ ```bash
+ php artisan db:seed
+ ```
+
 
 ### 開発環境
 
@@ -31,8 +85,10 @@
   http://localhost/
 
 - ユーザ登録
+  http://localhost/register
 
 - 管理画面
+  http://localhost/admin
 
 ## 使用技術（実行環境）
 
