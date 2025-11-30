@@ -1,0 +1,241 @@
+.admin__content{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.form{
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.form__search{
+    width: 90%;
+}
+
+.search-form__item {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #F4F4F4;
+    color: #8F7E6E;
+}
+
+.search-form__input{
+    padding: 10px;
+    width:300px;
+    border: none;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #F4F4F4;
+    color: #8F7E6E;
+    font-size: small;
+}
+
+.search-form__button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.search-form__button-search{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    background: #82756B;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form__button-reset {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    background: #D9C6B5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    padding: 8px 45px 8px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F4F4F4;
+    color: #8F7E6E;
+    appearance: none;
+    /* ブラウザ標準の矢印を消す */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* 疑似要素で三角を作る */
+.select-wrapper::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #aaa;
+    pointer-events: none;
+}
+
+.form__input--date{
+    position: relative;
+}
+
+.form__input--date input{
+    border:none;
+    border-radius: 3px;
+    background-color: #F4F4F4;
+    color: #8F7E6E;
+    padding: 10px 20px 10px 10px;
+}
+
+/* 標準のカレンダーアイコンを消す（Chrome/Edge/Safari） */
+.form__input--date input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* ▼ を擬似要素で表示 */
+.form__input--date::after {
+    content: "▼";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #aaa;
+    pointer-events: none;
+    /* ▼がクリック邪魔しない */
+}
+
+.button-export {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background: #EDEAE6;
+    color: #8F7E6E;
+    cursor: pointer;
+}
+
+/* ページネーション用 */
+svg.w-5.h-5 {
+    /*paginateメソッドの矢印の大きさ調整のために追加*/
+    width: 30px;
+    height: 30px;
+}
+
+.page-link{
+    border-color: #aaa;
+    color: #8F7E6E;
+}
+
+.active>.page-link,
+.page-link.active {
+    background-color: #8F7E6E;
+    color: #fff;
+    border-color: #8F7E6E;
+}
+
+.search-form__pagination .pagination{
+    margin-bottom:0;
+}
+
+.content__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* テーブル用 */
+.contact-table__inner{
+    width: 100%;
+}
+
+.contact-table__inner tr {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact-table__inner th{
+    background-color: #8F7E6E;
+    color: #fff;
+    padding: 5px 40px;
+    font-weight:normal;
+}
+
+.contact-table__inner td {
+    padding: 5px 40px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.contact-table__button-detail {
+    padding: 5px 20px;
+    border-radius: 3px;
+    border: 1px solid #E3D5C8;
+    border-radius: 3px;
+    background: #F6F6F6;
+    color: #E3D5C8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* モーダル関係 */
+.modal-dialog{
+    width: 50%;
+}
+
+.modal-content{
+    border-radius: 0px;
+}
+
+.modal-header{
+    border:none;
+}
+
+.modal-footer{
+    border:none;
+}
+
+.modal-body{
+    margin: 10px auto;
+    width: 90%;
+}
+
+.modal-table__inner{
+    border:none;
+    text-align: left;
+}
+
+.modal-table__header{
+    width: 40%;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.modal__button-delete{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.modal__button-delete button{
+    padding: 5px 20px;
+    /* height: 35px; */
+    border: none;
+    border-radius: 1px;
+    background: #BA370D;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}

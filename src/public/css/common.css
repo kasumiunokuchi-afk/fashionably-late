@@ -1,0 +1,55 @@
+body{
+    font-family: "Times", "メイリオ", sans-serif;
+    color: #8F7E6E;
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: #8F7E6E;
+}
+
+.header__login {
+    display: inline;
+    position: absolute;
+    top:25px;
+    right: 50px;
+}
+
+.header__login button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #E3D5C8;
+    border-radius: 3px;
+    background: #F6F6F6;
+    color: #E3D5C8;
+    cursor: pointer;
+    width: 100px;
+    font-weight: bold;
+}
+
+.title {
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.form__error {
+    height: 20px;
+    color: #f00;
+    text-align: left;
+}
